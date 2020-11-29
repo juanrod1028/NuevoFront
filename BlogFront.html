@@ -10,15 +10,15 @@
 
 <body>
     <div id="app">
-        Nombre Producto: <input type="text" v-model="newP" />
-        Precio Producto: <input type="text" v-model="pre" />
+        Nombre Persona: <input type="text" v-model="newP" />
+        Comentario: <textarea type="text" v-model="pre" name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea> 
         <button v-on:click="crear">Aceptar</button>
 
-        <p>Productos ofrecidos</p>
+        <p>Seccion de Comentarios</p>
         <ul>
-            <li v-for="p in producto">{{p.nom}} ${{p.pre}}</li>
+            <li v-for="p in comentario">{{p.nom}} ${{p.com}}</li>
         </ul>
-        <h2>Total a pagar:{{total}}</h2>
+        <!--<h2>Total a pagar:{{total}}</h2> -->
     </div>
 
     <script>
@@ -26,20 +26,20 @@
             el: '#app',
             data: {
                 total: 0,
-                producto: []
+                comentario: []
                 
             },
             methods: {
                 crear: function () {
-                    this.producto.push({
-                        nom: this.newP,
-                        pre: this.pre
+                    this.comentario.push({
+                        nom: this.newC,
+                        com: this.com
                     });
-                    this.total +=  parseInt(this.pre);
-                    this.newP = '';
-                    this.pre = '';
+                    //this.total +=  parseInt(this.pre);
+                    this.newC = '';
+                    this.com = '';
                 }
-            }
+            }  
         })
     </script>
 </body>
