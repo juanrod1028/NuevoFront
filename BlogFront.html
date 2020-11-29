@@ -1,21 +1,50 @@
-<html>
-<meta charset="utf-8">
-<form action="cgi-bin/Blog.py" id="frmComment" method="GET">
-  <div class="row">
-     <label> Nombre: </label> <span id="name-info"></span><input class="form-field" id="name" type="text" name="usr">
-  </div>
-  <div class="row">
-     <label for="mesg"> Mensaje : <span id="message-info"></span></label>
-     <textarea class="form-field" id="message" name="message" rows="4"></textarea>
-  </div>
-  <div class="row">
-    <button type="submit" class="btn-add-comment">Añadir Comentario</button> 
-   </div>
- </form>
- </html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
 
+<body>
+    <div id="app">
+        Nombre Producto: <input type="text" v-model="newP" />
+        Precio Producto: <input type="text" v-model="pre" />
+        <button v-on:click="crear">Aceptar</button>
 
+        <p>Productos ofrecidos</p>
+        <ul>
+            <li v-for="p in producto">{{p.nom}} ${{p.pre}}</li>
+        </ul>
+        <h2>Total a pagar:{{total}}</h2>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                total: 0,
+                producto: []
+                
+            },
+            methods: {
+                crear: function () {
+                    this.producto.push({
+                        nom: this.newP,
+                        pre: this.pre
+                    });
+                    this.total +=  parseInt(this.pre);
+                    this.newP = '';
+                    this.pre = '';
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
 
 
 
