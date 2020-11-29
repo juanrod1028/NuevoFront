@@ -10,13 +10,13 @@
 
 <body>
     <div id="app">
-        Nombre Persona: <input type="text" v-model="newP" />
-        Comentario: <textarea type="text" v-model="pre" name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea> 
+        Nombre Persona: <input type="text" v-model="newC" />
+        Comentario: <textarea type="text" v-model="com" name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea> 
         <button v-on:click="crear">Aceptar</button>
 
         <p>Seccion de Comentarios</p>
         <ul>
-            <li v-for="p in comentario">{{p.nom}} ${{p.com}}</li>
+            <li v-for="p in comentario">{{p.nom}} {{p.com}}</li>
         </ul>
         <!--<h2>Total a pagar:{{total}}</h2> -->
     </div>
