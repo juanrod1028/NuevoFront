@@ -1,4 +1,5 @@
 var direccion = "/cgi-bin/NuevoBack";
+//xd metodo ajax para regisrar un usuario
 function registrarUsuario(obj){
     $.ajax({
         method: 'POST',
@@ -21,7 +22,7 @@ function registrarUsuario(obj){
     }); 
 
 }
-
+//xd metodo ajax para ingresar un usuario
 function loginUsuario(obj){
     $.ajax({
         method: 'POST',

@@ -5,19 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Document</title>
+    <title>TheSlap</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="shortcut icon" href="img/Icono.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
-        Nombre Persona: <input type="text" v-model="newC" />
-        Comentario: <textarea type="text" v-model="com" name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea> 
-        <button v-on:click="crear">Aceptar</button>
+    
+    <header>
+        <nav>
+            <a href="#">TheSlap</a>
+            <a href="#">Categorias</a>           
+            <a href="#">Contactos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Bienvenido a TheSlap</h1>
+        </section>
+        <div class="Ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C213.88,125.62 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+    <div class="row1">
+        <h5>Albert Bednarski Comenta:</h5>
+        <h2>After 4 months of work I can show the champion I created for League of Legends</h2>
+        <h1> </h1> 
+        <h4>This is a fan concept for the champion Brenvar I made. I really like the game and wanted to create a champion that fits into its universe. I've put a lot of effort into this and am very happy to hear what you think of it! Also I'm applying to the riot games internship with this, do I have a chance? ..</h4>
+        <h2> </h2>    
+        <h4>Brenvar Concept: <a href="https://www.artstation.com/artwork/eaRn6P">https://www.artstation.com/artwork/eaRn6P</a></h4>   
 
-        <p>Seccion de Comentarios</p>
-        <ul>
-            <li v-for="p in comentario">{{p.nom}} dijo : {{p.com}}</li>
+    </div>
+    <div id="app" class="row2">
+        <h2>Nombre</h2>
+        <input class="form-field1" type="text" v-model="newC" />
+        <h2>Mensaje</h2>
+        <textarea class="form-field2"  type="text" v-model="com" name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+        <h2> </h2>
+        <button class="boton" v-on:click="crear">Enviar</button>
+        
+        <div style="background-color:#d6d6d6;" class="comentario">
+        <h2>Seccion de Comentarios</h2>
+        <ul >
+            <li v-for="p in comentario" class="c1">{{p.nom}} dijo : </p> {{p.com}}</li>
         </ul>
+        </div>
         <!--<h2>Total a pagar:{{total}}</h2> -->
     </div>
 
@@ -42,7 +71,21 @@
             }  
         })
     </script>
+    <h6></h6>
 </body>
+<footer>
+    <div class="contenedor-footer">
+       <div class="content-foo">
+          <h4>Telefono</h4>
+          <p>3153538147</p>
+       </div>
+       <div class="content-foo">
+          <h4>Email</h4>
+          <p>Juan.Trujillo01@correo.usa.edu.co</p>
+       </div>
+    </div>
+    <h2 class="titulo-final">&copy; Juan Jose Trujillo | Juan Camilo Rodriguez</h2>
+ </footer>
 
 </html>
 
