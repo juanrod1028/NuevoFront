@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El baul medico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <ul class="menu">
+        <li ><a href="#">Inicio</a></li>
+        <li ><a href="#">Informate</a></li>
+        <li ><a href="catalogo.html">Catalogo</a></li> 
+        <li ><a href="#">Carrito</a></li>
+        <li ><a href="#">Donaciones</a></li>
+        <li ><a href="contactanos.html">Contactanos</a></li>
+    </ul>
+    <h1 class="title">Productos Ortopedia</h1>
+    <div id="app"></div>
+ <div class="container">
+        <div class="section">
+            <button class="btn" id="boton">Ver </button>
+            <table>
+                <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Disponibilidad</th>
+                </tr>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+    var ajax= new XMLHttpRequest();
+    var method="GET";
+    var url="/info/control<dor.php";
+    var asynchronous= true;
+    ajax.open(method,url,asynchronous);
+    ajax.send();
+    ajax.onreadystatechange=function(){
+        if(this.readyState=4 && this.status==200)
+        {
+            console.log(this.responseText);
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

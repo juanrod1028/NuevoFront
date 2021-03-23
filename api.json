@@ -1,0 +1,46 @@
+[
+    {
+      "precio": 1000, 
+      "id": 1,
+      "title": "a",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://cdn-3.expansion.mx/dims4/default/4660642/2147483647/strip/true/crop/724x483+0+0/resize/800x534!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F5d%2Fd76be1374cceb3b389c022eca259%2Fistock-916352338.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 2,
+      "title": "b",
+      "url": "https://via.placeholder.com/600/771796",
+      "thumbnailUrl": "https://via.placeholder.com/150/771796"
+    },
+    {
+      "precio": 800,
+      "id": 3,
+      "title": "c",
+      "url": "https://via.placeholder.com/600/24f355",
+      "thumbnailUrl": "https://via.placeholder.com/150/24f355"
+    },
+    {
+      "precio": 700,
+      "id": 4,
+      "title": "d",
+      "url": "https://via.placeholder.com/600/d32776",
+      "thumbnailUrl": "https://via.placeholder.com/150/d32776"
+    },
+    {
+      "precio": 600,
+      "id": 5,
+      "title": "f",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97"
+    },
+    {
+      "precio": 500,
+      "id": 6,
+      "title": "g",
+      "url": "https://via.placeholder.com/600/56a8c2",
+      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
+    }
+
+
+]
