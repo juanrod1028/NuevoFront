@@ -10,7 +10,7 @@ function registrarUsuario(obj){
             response=JSON.parse(rta);
             if(response.tipo==="OK"){
                 alert("Mensaje: "+response.mensaje)
-                $(location).attr('href','/NuevoFront/BlogFront.html')
+                $(location).attr('href','/NuevoFront/catalogo.html')
             }
             else{
                 alert("Error: "+response.mensaje)
@@ -33,7 +33,7 @@ function loginUsuario(obj){
             response=JSON.parse(rta);
             if(response.tipo==="OK"){
                 alert("Mensaje: "+response.mensaje)
-                $(location).attr('href','/NuevoFront/BlogFront.html')
+                $(location).attr('href','/NuevoFront/catalogo.html')
             }
             else{
                 alert("Error: "+response.mensaje)
