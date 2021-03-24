@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El baul medico</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <ul class="menu">
+        <li ><a href="#">Inicio</a></li>
+        <li ><a href="#">Informate</a></li>
+        <li ><a href="catalogo.html">Catalogo</a></li> 
+        <li ><a href="#">Carrito</a></li>
+        <li ><a href="#">Donaciones</a></li>
+        <li ><a href="contactanos.html">Contactanos</a></li>
+    </ul>
+    <h1 class="title">Opciones De Donaciones</h1>>
+    <div class="container">
+        <div class="target">
+        <label for="NameProducto">Producto ortopedico:</label>
+        <input type="text" id="fNamePtoducto" name="fNameProducto"><br></br>
+       
+        <label for="TiempodeUso">Tiempo de uso del producto:</label>
+        <input type="text" id="fTiempodeUso" name="fTiempodeUso"><br></br>
+       
+        <label for="Estado">Estado del producto (1-5 siendo 1 e perfecto estado y 5 sin posilidad de arreglo):</label>
+        <input type="text" id="fEstado" name="fEstado"><br></br>
+       
+        <label for="InserteFotoDelProducto">Inserte foto Del producto:</label>
+        <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+
+            <p>
+              <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
+          
+              <input type="submit" value="Enviar datos">
+          
+            </p>
+          
+          </form>
+
+        <label for="CategoriaProducto">Categoria del producto:</label>
+         <select name="fCategoriaProducto" id="fCategoriaProducto">
+            <option value="opcion1">1</option>
+            <option value="opcion2">2</option>
+            <option value="opcion3">3</option>
+            <option value="opcion4">4</option>
+        </select><br></br>
+        <button type="button" class="btn btn-danger">Donar ahora!</button>
+
+        </div>
+    </div>
+    
+
+</body>
+</html>

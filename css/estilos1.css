@@ -45,3 +45,16 @@ input {
 .ui-green-button{
     margin-top: 25px;
 }
+
+.container .card2{
+    width: 800px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: aliceblue;
+
+}
