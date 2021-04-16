@@ -3,9 +3,16 @@ $("#Ingresar").click(function(e){
     e.preventDefault();
     var username = $("#usr").val();
     var password = $("#pass").val();
-    var obj = { 
-        nombre: username,
-        contraseña: password
+    if(validarEmail(email)){
+        var obj = { 
+            nombre: username,
+            contraseña: password
+        }
+        loginUsuario(obj);
+    }else{
+        alert("Formato de correo inválido") 
     }
-    loginUsuario(obj);
 });
+
+
+
