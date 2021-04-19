@@ -16,7 +16,7 @@ $("#btnAgregarProduc").click(function(e){
 }
 );
 
-$("#btnActualizar").click(function(e){
+$("#btnActualizarProduc").click(function(e){
     e.preventDefault();
     var idCategoria=$("#idCategoria").val();
     var idProducto=$("#idProducto").val();
