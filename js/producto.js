@@ -36,13 +36,13 @@ $("#btnActualizar").click(function(e){
 }
 );
 
-$("#btnEliminar").click(function(e){
+$("#btnEliminarProduc").click(function(e){
     e.preventDefault();
-    var idProducto=$("#idProducto").val();
+    var idProducto=$("#id").val();
     var nombre=$("#nombre").val();
     var imagen=$("#imagen").val();
     var obj={
-            idProducto: idProducto
+        id: idProducto
     };
     eliminarProducto(obj)
 }
