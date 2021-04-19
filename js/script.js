@@ -133,3 +133,57 @@ function registrarAdmin(obj){
     }); 
 
 }
+
+function crearProtuducto(obj){
+    $.ajax({
+        method: 'POST',
+        url: direccion+'/producto.py',
+        data: obj,
+        dataType: "json",
+        success: function(response) {
+            console.log(response)
+            alert("Producto creado exitosamente")
+            $(location).attr('href','/NuevoFront/catalogo.html')
+        },
+        error: function(response){
+            console.log("Error al crear producto")
+            console.log(JSON.stringify(response))
+        }
+    }); 
+}
+
+function actualizarProducto(obj){
+    $.ajax({
+        method: 'PUT',
+        url: direccion+'/producto.py',
+        data: obj,
+        dataType: "json",
+        success: function(response) {
+            console.log(response)
+            alert("Producto actualizado exitosamente")
+            $(location).attr('href','/NuevoFront/catalogo.html')
+        },
+        error: function(response){
+            console.log("Error al actualizar producto ")
+            console.log(JSON.stringify(response))
+        }
+    }); 
+}
+
+function eliminarProducto(obj){
+    $.ajax({
+        method: 'DELETE',
+        url: direccion+'/producto.py',
+        data: obj,
+        dataType: "json",
+        success: function(response) {
+            console.log(response)
+            alert("Producto eliminado exitosamente")
+            $(location).attr('href','/NuevoFront/catalogo.html')
+        },
+        error: function(response){
+            console.log("Error al eliminar producto")
+            console.log(JSON.stringify(response))
+        }
+    });    
+}
