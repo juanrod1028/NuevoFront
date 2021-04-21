@@ -18,41 +18,32 @@
         <li ><a href="contactanos.html">Contactanos</a></li>
     </ul>
     <h1 class="title">Opciones De Donaciones</h1>>
+
     <div class="container">
         <div class="target">
-        <label for="NameProducto">Producto ortopedico:</label>
-        <input type="text" id="fNamePtoducto" name="fNameProducto"><br></br>
-       
-        <label for="TiempodeUso">Tiempo de uso del producto:</label>
-        <input type="text" id="fTiempodeUso" name="fTiempodeUso"><br></br>
-       
-        <label for="Estado">Estado del producto (1-5 siendo 1 e perfecto estado y 5 sin posilidad de arreglo):</label>
-        <input type="text" id="fEstado" name="fEstado"><br></br>
-       
-        <label for="InserteFotoDelProducto">Inserte foto Del producto:</label>
-        <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+        <label for="NameProducto">ID del producto ortopedico:</label>
+        <input type="number" id="id" name="NameProducto"><br></br>    
 
-            <p>
-              <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
-          
-              <input type="submit" value="Enviar datos">
-          
-            </p>
-          
-          </form>
+        <label for="NameProducto">Nombre el producto ortopedico:</label>
+        <input type="text" id="name" name="NameProducto"><br></br>
+
+        <label for="NameProducto">Precio del producto ortopedico:</label>
+        <input type="number" id="prec" name="PrecioProducto"><br></br>
+       
+        <label for="InserteFotoDelProducto">Inserte el link de la foto del producto:</label>
+        <input type="text" id="image" name="foto"><br></br>
 
         <label for="CategoriaProducto">Categoria del producto:</label>
-         <select name="fCategoriaProducto" id="fCategoriaProducto">
-            <option value="opcion1">1</option>
-            <option value="opcion2">2</option>
-            <option value="opcion3">3</option>
-            <option value="opcion4">4</option>
+         <select name="CategoriaProducto" id="categ">
+            <option value="opcion1" id="1">Muletas</option>
+            <option value="opcion2" id="2">Coderas</option>
+            <option value="opcion3" id="3">Rodilleras</option>
         </select><br></br>
-        <button type="button" class="btn btn-danger">Donar ahora!</button>
-
+        <input class="ui yellow button " id="btnDonar" type="submit" value="Donar">
+        
         </div>
-    </div>
-    
+    </div>  
 
 </body>
+<script src="js/donar.js"></script>
 </html>
