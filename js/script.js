@@ -1,3 +1,4 @@
+//XDD
 var direccion = "/cgi-bin/NuevoBack";
 
 /**

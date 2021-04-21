@@ -1,4 +1,5 @@
 //Recoge los datos de Registrar.html y los manda a register.py
+//XD
 $("#btnDonar").click(function(e){
     e.preventDefault();
     var precio=$("#prec").val();
