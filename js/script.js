@@ -195,17 +195,14 @@ function donarProductoo(obj){
         url: direccion+'/donar.py',
         data: obj,
         dataType: "json",
-        success: function(rta) {
-            response=JSON.parse(rta);
-            if(response.tipo==="OK"){
-                alert("Mensaje: "+response.mensaje)
-            }
-            else{
-                alert("Error: "+response.mensaje)
-            }
+        success: function(response) {
+            console.log(response)
+            alert("Producto donado exitosamente")
+            $(location).attr('href','/NuevoFront/catalogo.html')
         },
         error: function(response){
+            console.log("Error al donar producto")
             console.log(JSON.stringify(response))
         }
-    });
-} 
+    }); 
+}
