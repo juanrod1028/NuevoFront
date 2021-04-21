@@ -188,7 +188,7 @@ function eliminarProducto(obj){
     });    
 }
 
-function donarProducto(obj){
+function donarProductoo(obj){
     $.ajax({
         method: 'POST',
         url: direccion+'/donar.py',

@@ -14,7 +14,7 @@ $("#btnDonar").click(function(e){
         imagen: imagen,
         categoria: categoria
     }  
-    donarProducto(obj)
+    donarProductoo(obj)
 
 }
 );
