@@ -21,7 +21,7 @@
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inicio</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
-                    <a href="#">¿Quienes somos?</a>
+                    <a href="lo">¿Quienes somos?</a>
                 </li>
                 <li>
                     <a href="#">Contactanos</a>
@@ -52,7 +52,7 @@
               </ul>
 	          </li>
 	          <li>
-              <a href="carrito.html">Carrito</a>
+              <a href="catalogo.html">Carrito</a>
 	          </li>
 	          <li>
               <a href="OpcionesdeDonacion.html">Donaciones</a>
@@ -91,7 +91,7 @@
                     <a class="nav-link" href="catalogo.html">Catalogo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="carrito.html">Carrito</a>
+                    <a class="nav-link" href="#">Carrito</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="OpcionesdeDonacion.html">Donanos</a>
@@ -104,15 +104,38 @@
           </div>
         </nav>
 
-        <h2 class="mb-4">Bienvenido al baul medico</h2>
-        <p>Dona tu producto ortopedico y obten un producto o descuento de nuestro baul medico disponible</p>
-        <p>Registrate para acceder a nuestras funciones y descuentos </p>
-      </div>
-		</div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <h2 class="mb-4">Donaciones</h2>
+        <div class="container">
+          <div class="target">
+          <label for="NameProducto">ID del producto ortopedico:</label>
+          <input type="number" id="id" name="NameProducto"><br></br>    
+  
+          <label for="NameProducto">Nombre el producto ortopedico:</label>
+          <input type="text" id="name" name="NameProducto"><br></br>
+  
+          <label for="NameProducto">Precio del producto ortopedico:</label>
+          <input type="number" id="prec" name="PrecioProducto"><br></br>
+         
+          <label for="InserteFotoDelProducto">Inserte el link de la foto del producto:</label>
+          <input type="text" id="image" name="foto"><br></br>
+  
+          <label for="CategoriaProducto">Categoria del producto:</label>
+           <select name="CategoriaProducto" id="categ">
+              <option value="1">Muletas</option>
+              <option value="2">Coderas</option>
+              <option value="3">Rodilleras</option>
+          </select><br></br>
+          <input class="ui yellow button " id="btnDonar" type="submit" value="Donar">
+          
+          </div>
+      </div>  
+  
   </body>
+  <script type="text/javascript" src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/donar.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
